@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap");
+#nav-img {
+  width: 100px;
+  height: 100px;
+}
+#btn-signup,
+#btn-login {
+  margin-left: 10px;
+  border-color: #b09b71;
+  color: black;
+}
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.img {
+  background: url(../resource/cat.jpg) no-repeat center center;
+  background-size: cover;
+  padding-top: 25%;
+  padding-bottom: 25%;
+  padding-left: 25%;
+  padding-right: 25%;
+  color: #ffffde;
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+  background-color: #ffffde;
+  width: 100%;
+}
+
+.nav-link {
+  background-image: linear-gradient(
+    to right,
+    #474442 100%,
+    #3d3a2b 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  font-size: 18px;
+}
+.nav-link:hover {
+  background-position: 0;
+}
+.nav-link:hover::before {
+  width: 100%;
+}
+.word {
+  font-family: poppins;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: fit-content;
+  color: #cf1b1b;
+}
+.word::before {
+  content: "Welcome to adorávelpetcare";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent 0,
+    transparent 2px,
+    white 2px,
+    white 4px
+  );
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+  transition: 1s;
+}
+.word::after {
+  content: "Welcome to adorávelpetcare";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0,
+    transparent 2px,
+    white 2px,
+    white 4px
+  );
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0px;
+  transition: 1s;
+}
+.word::after {
+  top: -10px;
+  left: -10px;
+}
+
+.word2 {
+  font-family: poppins;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  color: #f9f2ed;
+}
+.btn-petRegis {
+  position: absolute;
+  background-color: #e9e94a;
+  color: black;
+  font-size: 18px;
+  border-color: white;
+  font-family: poppins;
+  border-radius: 5px;
+  padding: 10px;
+  left: 45%;
+  top: 63%;
+}
+.nav-link {
+  height: 100px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  list-style: none;
+  padding: 0 100px;
+}
+.nav-link {
+  height: 100%;
+  font-size: 19px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  color: rgb(0, 0, 0);
+}
+.nav-link::before,
+.nav-link::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+}
+.nav-link::before,
+.nav-link::after {
+  border: 0px solid transparent;
+  width: 0%;
+  height: 0%;
+  bottom: 0%;
+  right: 0%;
+}
+.nav-link::before {
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-radius: 10px;
+}
+.nav-link::after {
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-radius: 10px;
+}
+.nav-link:hover {
+  color: #000;
+}
+.nav-link:hover::before,
+.nav-link:hover::after {
+  border-color: rgb(176, 155, 113);
+  transition: border-color 0s, width 0.3s, height 0.3s;
+  width: 100%;
+  height: 100%;
+}
+.nav-link:hover::before {
+  transition-delay: 0s, 0s, 0.3s;
+}
+.nav-link:hover::after {
+  transition-delay: 0s, 0.3s, 0s;
+}
+.jenis-layanan {
+  background-image: linear-gradient(to left, #e9e94a, #f4e06d);
+}
+.card {
+  padding: 5rem, 2.5rem;
+
+  border-radius: 1rem;
+  border: 1px solid transparent;
+
+  backdrop-filter: blur(1rem);
+  box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-right-color: rgba(255, 255, 255, 0.5);
+}
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 100%;
+}
+.makanan-hewan {
+  background-image: linear-gradient(to left, #e9e94a, #f4e06d);
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+body {
+  background-image: url();
+}
+.footer {
+  background-image: linear-gradient(to left, #e9e94a, #f4e06d);
+}
+.About {
+  background-image: linear-gradient(to left, #e9e94a, #f4e06d);
+}
